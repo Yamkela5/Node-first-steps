@@ -1,3 +1,5 @@
-
+const chalk = require('chalk');
 const greet = require('./greet');
- console.log(greet('Athenkosi'))
+
+const styledMessage = chalk.bgGreen.black(greet('Athenkosi'));
+console.log(styledMessage)
